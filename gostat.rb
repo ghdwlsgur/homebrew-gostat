@@ -10,7 +10,7 @@ class Gostat < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ghdwlsgur/gostat/releases/download/v1.1.6/gostat_1.1.6_Darwin_arm64.tar.gz"
-      sha256 "f8a69ac7c6f8e646d30ed890e43e443edad6f774da246ad5840180a13a7ad120"
+      sha256 "53df130dd4514084e7d62747238fb40f0ba10bfcd4b6bad25c79fd83c989d0d1"
 
       def install
         bin.install "gostat"
@@ -18,7 +18,7 @@ class Gostat < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/ghdwlsgur/gostat/releases/download/v1.1.6/gostat_1.1.6_Darwin_x86_64.tar.gz"
-      sha256 "6687ad889865c0148bf461d58a3155ffbaa20f0e4be03b588ac8fb3b7bbd0e66"
+      sha256 "03b3957595d23d17bfc1c30d5e6c2fd7896d2c48b763cae6fccb5e6fdb8c13fe"
 
       def install
         bin.install "gostat"
@@ -29,7 +29,7 @@ class Gostat < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ghdwlsgur/gostat/releases/download/v1.1.6/gostat_1.1.6_Linux_arm64.tar.gz"
-      sha256 "a2970aff2ccd894557266c76f1ef0e14065ecdd7362629ceead898fcac48b7a9"
+      sha256 "f815da4e4f0c784ad346171aa67d8e80f838da5adcb28118b908b9d199c2586b"
 
       def install
         bin.install "gostat"
@@ -37,7 +37,7 @@ class Gostat < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/ghdwlsgur/gostat/releases/download/v1.1.6/gostat_1.1.6_Linux_x86_64.tar.gz"
-      sha256 "9703f15f6dbf5ecc0546074a74db62eb3c8f16843f67c68fa3d72a0b10e15520"
+      sha256 "345c596123f2df3e88a34142f43e978bddc2f04da108f3b87bf403ea4e58bbe3"
 
       def install
         bin.install "gostat"

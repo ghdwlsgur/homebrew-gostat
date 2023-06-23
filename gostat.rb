@@ -5,20 +5,20 @@
 class Gostat < Formula
   desc "An interactive cli tool that easily binds HTTPS certificates and diagnoses whether certificates are applied with edge servers as proxy."
   homepage "https://github.com/ghdwlsgur/gostat"
-  version "1.1.12"
+  version "1.1.13"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ghdwlsgur/gostat/releases/download/v1.1.12/gostat_1.1.12_Darwin_arm64.tar.gz"
-      sha256 "b2e288dcb9636810a3d0a39458e18be4ff3d756d00d5377cc9348508e0fee779"
+      url "https://github.com/ghdwlsgur/gostat/releases/download/v1.1.13/gostat_1.1.13_Darwin_arm64.tar.gz"
+      sha256 "463656eb7a18981fcaf7c1c09f4a73243b66b5e3e0ea4fc164cc48b150aeec94"
 
       def install
         bin.install "gostat"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ghdwlsgur/gostat/releases/download/v1.1.12/gostat_1.1.12_Darwin_x86_64.tar.gz"
-      sha256 "d7d9df194de7f548d6f62ce2216125eaf08281e0d28bbb7b109d9f7ae10c7487"
+      url "https://github.com/ghdwlsgur/gostat/releases/download/v1.1.13/gostat_1.1.13_Darwin_x86_64.tar.gz"
+      sha256 "8a659c936e83ad25a8421d464514b2af904f785a210510be20aa949e3407849a"
 
       def install
         bin.install "gostat"
@@ -28,16 +28,16 @@ class Gostat < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ghdwlsgur/gostat/releases/download/v1.1.12/gostat_1.1.12_Linux_arm64.tar.gz"
-      sha256 "507f18cc6027b05e120ca8469ec501aab139412e0e6bb7fb9e7b0444c0403bba"
+      url "https://github.com/ghdwlsgur/gostat/releases/download/v1.1.13/gostat_1.1.13_Linux_arm64.tar.gz"
+      sha256 "87ce0267c2f68344530f71f4f8034af57d6ff13c883752a5cbbcb12ee785d192"
 
       def install
         bin.install "gostat"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ghdwlsgur/gostat/releases/download/v1.1.12/gostat_1.1.12_Linux_x86_64.tar.gz"
-      sha256 "ab0a4f3555df3e1b9767caa9d1ccc0fef51a59b64640bbcedc7dfe5243c225e0"
+      url "https://github.com/ghdwlsgur/gostat/releases/download/v1.1.13/gostat_1.1.13_Linux_x86_64.tar.gz"
+      sha256 "73ff1333bba916bb6a0329dcc291d7e72b6be55a6d561321669c7d522a1ae812"
 
       def install
         bin.install "gostat"

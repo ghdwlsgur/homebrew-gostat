@@ -6,32 +6,32 @@ cask "gostat" do
         must_succeed: false
   end
 
-  version "1.3.2"
+  version "1.3.3"
 
   on_macos do
     on_intel do
-      sha256 "66a53e14489568fc7370d1115dbe3e378fc4c68bd3102c5fdb760c5457de697c"
+      sha256 "331560dde66cccb1f8fa484e7f1628de04ebbb99a86badb57ea9ec497cd84ec3"
       url "https://github.com/ghdwlsgur/gostat/releases/download/v#{version}/gostat_#{version}_Darwin_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "ef3f021a797a24b3d11547d42d2089014f25b749cd8b6bf64f95b62c4c16a72a"
+      sha256 "c5571c985002dcb24bd3907ea976da7ac586b005c103ab76775c3f6863945f7e"
       url "https://github.com/ghdwlsgur/gostat/releases/download/v#{version}/gostat_#{version}_Darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "689b34a2265a79b8218b8dbadfa2f5876a096f83fb16a46a161117b26a57e9b3"
+      sha256 "dff3d7fdc5e5d3c524a7bdb67a4073ac37dea7cc2b174a2cfba82f64fd2b0732"
       url "https://github.com/ghdwlsgur/gostat/releases/download/v#{version}/gostat_#{version}_Linux_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "3515bee77311fe1a5a2694b1633bfef4bf53609d949a9e1d969659f730ead77b"
+      sha256 "b69afc8944cf76272585138142283bda70160e1d73b682ea0bf411c9fcf00e93"
       url "https://github.com/ghdwlsgur/gostat/releases/download/v#{version}/gostat_#{version}_Linux_arm64.tar.gz"
     end
   end
 
   name "gostat"
-  desc "HTTP GET to a domain's A records or a pinned edge IP, with response headers and per-stage latency"
+  desc "Send an HTTP GET request to a domain's A record or a pinned edge IP, and measure the response headers and latency at each stage"
   homepage "https://github.com/ghdwlsgur/gostat"
 
   livecheck do

@@ -6,25 +6,25 @@ cask "gostat" do
         must_succeed: false
   end
 
-  version "1.3.8"
+  version "1.3.9"
 
   on_macos do
     on_arm do
-      sha256 "87189877af5e9c7654e6a94876a8815998d6088667c2a58652ce223b0cf5bb89"
+      sha256 "9729022ff6498507778185f5515ced04f613438b061cb02023b924786a45dcdc"
       url "https://github.com/ghdwlsgur/gostat/releases/download/v#{version}/gostat_#{version}_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "d054fb8a9574ee5e2a155e41d15ee43dedb305862183d4dc7e11391dd6752745"
+      sha256 "1095cf4dd154758fc9c2ea489e5070c2d91d9e622336160b48887c21d0fd1596"
       url "https://github.com/ghdwlsgur/gostat/releases/download/v#{version}/gostat_#{version}_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "ab0156ff00807a76a6e199236af94cd4cc2d269dad03e234ac41e3ca70a421f7"
+      sha256 "fef048df5dcc0cfbda67a83b765bf5ed4ce6cf1fd5afa859e1cc9c77da3d6621"
       url "https://github.com/ghdwlsgur/gostat/releases/download/v#{version}/gostat_#{version}_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "8526b83545794c4a9246fa38a5ef01701dc7c38acf6be918b75363b5e025bcfb"
+      sha256 "aaa6513ccc93f4af323934aaad93cf01097e2d637a7f66554209b19e9ffde780"
       url "https://github.com/ghdwlsgur/gostat/releases/download/v#{version}/gostat_#{version}_Linux_x86_64.tar.gz"
     end
   end
